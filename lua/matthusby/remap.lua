@@ -18,6 +18,9 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>tt", vim.cmd.NvimTreeToggle)
 vim.keymap.set("n", "<leader>tf", vim.cmd.NvimTreeFindFile)
 
-vim.keymap.set("n", "bn", vim.cmd.bnext)
-vim.keymap.set("n", "bp", vim.cmd.bprev)
+vim.keymap.set("n", "<D-[>", vim.cmd.bprev)
+vim.keymap.set("n", "<D-]>", vim.cmd.bnext)
 
+vim.keymap.set("n", "<leader>bd", vim.cmd.bd)
+
+vim.keymap.set("n", "<leader>se", vim.diagnostic.open_float)

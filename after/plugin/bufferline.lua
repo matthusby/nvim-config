@@ -3,7 +3,8 @@ local bufferline = require('bufferline')
 bufferline.setup {
     options = {
         mode = "buffers", -- set to "tabs" to only show tabpages instead
-        style_preset = bufferline.style_preset.minimal, -- or bufferline.style_preset.minimal,
+        separator_style = "thick",
+        style_preset = bufferline.style_preset.slant, -- or bufferline.style_preset.minimal,
         numbers = "none",
         close_command = "bdelete! %d",       -- can be a string | function, | false see "Mouse actions"
         right_mouse_command = "bdelete! %d", -- can be a string | function | false, see "Mouse actions"
@@ -13,7 +14,7 @@ bufferline.setup {
             icon = '▎', -- this should be omitted if indicator style is not 'icon'
             style = 'icon', -- | 'underline' | 'none',
         },
-        buffer_close_icon = ' ',
+        buffer_close_icon = '',
         modified_icon = '●',
         close_icon = '',
         left_trunc_marker = '',
@@ -27,11 +28,12 @@ bufferline.setup {
         truncate_names = true, -- whether or not tab names should be truncated
         tab_size = 18,
         diagnostics = "nvim_lsp",
+        diagnostics_indicator = function(count, level, diagnostics_dict, context)
+              local icon = level:match("error") and " " or " "
+                return " " .. icon .. count
+            end,
         diagnostics_update_in_insert = false,
         -- The diagnostics indicator can be set to nil to keep the buffer name highlight but delete the highlighting
-        diagnostics_indicator = function(count, level, diagnostics_dict, context)
-            return "("..count..")"
-        end,
         -- NOTE: this will be called a lot so don't do any heavy processing here
         offsets = {
             {
@@ -59,7 +61,6 @@ bufferline.setup {
         move_wraps_at_ends = true, -- whether or not the move command "wraps" at the first or last position
         -- can also be a table containing 2 custom separators
         -- [focused and unfocused]. eg: { '|', '|' }
-        separator_style = "thin",
         --enforce_regular_tabs = false | true,
         always_show_bufferline = true,
         hover = {
