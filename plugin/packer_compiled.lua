@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/matthusby/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["llm.nvim"] = {
+    loaded = true,
+    path = "/Users/matthusby/.local/share/nvim/site/pack/packer/start/llm.nvim",
+    url = "https://github.com/gsuuon/llm.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/matthusby/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -144,11 +149,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/matthusby/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["telescope-file-browser.nvim"] = {
-    loaded = true,
-    path = "/Users/matthusby/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
-    url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

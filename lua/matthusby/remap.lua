@@ -22,5 +22,6 @@ vim.keymap.set("n", "<D-[>", vim.cmd.bprev)
 vim.keymap.set("n", "<D-]>", vim.cmd.bnext)
 
 vim.keymap.set("n", "<leader>bd", vim.cmd.bd)
+vim.keymap.set("n", "<D-w>", vim.cmd.bd)
 
 vim.keymap.set("n", "<leader>se", vim.diagnostic.open_float)
