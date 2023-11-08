@@ -8,7 +8,7 @@ return require('packer').startup(function(use)
 		'nvim-telescope/telescope.nvim', tag = '0.1.4',
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
-	} 
+	 }
 
 	use {
 		"EdenEast/nightfox.nvim",
@@ -40,7 +40,7 @@ return require('packer').startup(function(use)
 	use('nvim-tree/nvim-tree.lua')
 	use('nvim-tree/nvim-web-devicons')
     use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
-    use('gsuuon/llm.nvim')
+--    use('gsuuon/llm.nvim')
     use({
         "jackMort/ChatGPT.nvim",
         requires = {
@@ -50,4 +50,5 @@ return require('packer').startup(function(use)
         }
     })
     -- use ('folke/noice.nvim')
+    use('lewis6991/gitsigns.nvim')
 end)
