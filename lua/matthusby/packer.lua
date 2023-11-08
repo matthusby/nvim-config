@@ -41,4 +41,13 @@ return require('packer').startup(function(use)
 	use('nvim-tree/nvim-web-devicons')
     use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
     use('gsuuon/llm.nvim')
+    use({
+        "jackMort/ChatGPT.nvim",
+        requires = {
+            "MunifTanjim/nui.nvim",
+            "nvim-lua/plenary.nvim",
+            "nvim-telescope/telescope.nvim"
+        }
+    })
+    -- use ('folke/noice.nvim')
 end)
