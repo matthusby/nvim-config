@@ -98,6 +98,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/matthusby/.local/share/nvim/site/pack/packer/start/llm.nvim",
     url = "https://github.com/gsuuon/llm.nvim"
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/Users/matthusby/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
