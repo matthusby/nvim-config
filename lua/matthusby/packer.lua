@@ -49,5 +49,5 @@ return require('packer').startup(function(use)
             "nvim-telescope/telescope.nvim"
         }
     })
-    -- use ('folke/noice.nvim')
+    use ('folke/noice.nvim')
 end)
