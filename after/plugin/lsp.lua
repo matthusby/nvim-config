@@ -16,7 +16,7 @@ require('mason-lspconfig').setup({
 		'tsserver',
 		'lua_ls',
 		'marksman',
-		'jedi_language_server',
+--		'jedi_language_server',
 		'solargraph',
 		'rust_analyzer'
 	},
